@@ -1,0 +1,358 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>WgtEditTable</class>
+ <widget class="QWidget" name="WgtEditTable">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>523</width>
+    <height>360</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout">
+   <item>
+    <layout class="QHBoxLayout" name="horizontalLayout_4">
+     <item>
+      <widget class="QPushButton" name="pbtnBackToMenu">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="minimumSize">
+        <size>
+         <width>80</width>
+         <height>22</height>
+        </size>
+       </property>
+       <property name="cursor">
+        <cursorShape>PointingHandCursor</cursorShape>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton 
+{
+  	background-color: rgb(194, 55, 0);
+  	color: white;
+	border-radius: 5px;
+    border-color: beige;
+}
+
+QPushButton:hover 
+{
+	background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 rgb(255, 125, 11), stop:1 rgb(255, 188, 17))
+}
+QPushButton:pressed {
+     background-color: rgb(98, 98, 98);
+     border-style: inset;
+ }</string>
+       </property>
+       <property name="text">
+        <string>Назад</string>
+       </property>
+       <property name="iconSize">
+        <size>
+         <width>30</width>
+         <height>30</height>
+        </size>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <spacer name="horizontalSpacer_2">
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+       <property name="sizeHint" stdset="0">
+        <size>
+         <width>40</width>
+         <height>20</height>
+        </size>
+       </property>
+      </spacer>
+     </item>
+     <item>
+      <widget class="QComboBox" name="comboBoxListTables">
+       <property name="styleSheet">
+        <string notr="true">QComboBox {
+     border: 1px solid gray;
+     border-radius: 3px;
+     padding: 1px 18px 1px 3px;
+     min-width: 6em;
+ }
+
+ QComboBox:editable {
+     background: white;
+ }
+
+QComboBox:!editable, QComboBox::drop-down:editable {
+      background: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+                                  stop: 0 #E1E1E1, stop: 0.4 #DDDDDD,
+                                  stop: 0.5 #D8D8D8, stop: 1.0 #D3D3D3);
+	color:  rgb(48, 48, 48);
+ }
+
+QComboBox:!editable:on, QComboBox::drop-down:editable:on {
+     background: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+                                 stop: 0 rgb(79, 79, 79), stop: 0.4 #D8D8D8,
+                                 stop: 0.5 #DDDDDD, stop: 1.0 #E1E1E1);
+ }
+
+QComboBox:on { /* сдвиг текста, когда раскрывается всплывающий список */
+     padding-top: 3px;
+     padding-left: 4px;
+ }
+
+QComboBox QAbstractItemView {
+     border: 2px solid darkgray;
+	 color: rgb(48, 48, 48);
+	 background-color: rgb(249, 249, 249)
+ }</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+   <item>
+    <widget class="QTableView" name="tableView">
+     <property name="minimumSize">
+      <size>
+       <width>90</width>
+       <height>0</height>
+      </size>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QTableView {
+     selection-background-color: qlineargradient(x1: 0, y1: 0, x2: 0.5, y2: 0.5,
+                                 stop: 0 rgb(255, 163, 5), stop: 1 rgb(239, 239, 0));
+}
+
+QTableView QTableCornerButton::section {
+     background:  rgb(230, 230, 230);
+     border: 2px outset  rgb(230, 230, 230);
+ }
+
+QHeaderView::section 
+{
+	background-color: rgb(230, 230, 230);
+	color: rgb(48, 48, 48)
+}</string>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <layout class="QHBoxLayout" name="horizontalLayout_5">
+     <item>
+      <widget class="QPushButton" name="pbtnDeleteRow">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="minimumSize">
+        <size>
+         <width>90</width>
+         <height>22</height>
+        </size>
+       </property>
+       <property name="cursor">
+        <cursorShape>PointingHandCursor</cursorShape>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton 
+{
+  	background-color: rgb(194, 55, 0);
+  	color: white;
+	border-radius: 5px;
+    border-color: beige;
+}
+
+QPushButton:hover 
+{
+	background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 rgb(255, 125, 11), stop:1 rgb(255, 188, 17))
+}
+QPushButton:pressed {
+     background-color: rgb(98, 98, 98);
+     border-style: inset;
+ }</string>
+       </property>
+       <property name="text">
+        <string>Удалить</string>
+       </property>
+       <property name="iconSize">
+        <size>
+         <width>30</width>
+         <height>30</height>
+        </size>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="pbtnInsertRow">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="minimumSize">
+        <size>
+         <width>90</width>
+         <height>22</height>
+        </size>
+       </property>
+       <property name="cursor">
+        <cursorShape>PointingHandCursor</cursorShape>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton 
+{
+  	background-color: rgb(194, 55, 0);
+  	color: white;
+	border-radius: 5px;
+    border-color: beige;
+}
+
+QPushButton:hover 
+{
+	background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 rgb(255, 125, 11), stop:1 rgb(255, 188, 17))
+}
+QPushButton:pressed {
+     background-color: rgb(98, 98, 98);
+     border-style: inset;
+ }</string>
+       </property>
+       <property name="text">
+        <string>Добавить</string>
+       </property>
+       <property name="iconSize">
+        <size>
+         <width>30</width>
+         <height>30</height>
+        </size>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <spacer name="horizontalSpacer_4">
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+       <property name="sizeHint" stdset="0">
+        <size>
+         <width>40</width>
+         <height>20</height>
+        </size>
+       </property>
+      </spacer>
+     </item>
+     <item>
+      <widget class="QPushButton" name="pbtnCancelSaveInDb">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="minimumSize">
+        <size>
+         <width>90</width>
+         <height>22</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>16777215</width>
+         <height>16777215</height>
+        </size>
+       </property>
+       <property name="cursor">
+        <cursorShape>PointingHandCursor</cursorShape>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton 
+{
+  	background-color: rgb(194, 55, 0);
+  	color: white;
+	border-radius: 5px;
+    border-color: beige;
+}
+
+QPushButton:hover 
+{
+	background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 rgb(255, 125, 11), stop:1 rgb(255, 188, 17))
+}
+QPushButton:pressed {
+     background-color: rgb(98, 98, 98);
+     border-style: inset;
+ }</string>
+       </property>
+       <property name="text">
+        <string>Отмена</string>
+       </property>
+       <property name="iconSize">
+        <size>
+         <width>30</width>
+         <height>30</height>
+        </size>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="pbtnSaveInDb">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="minimumSize">
+        <size>
+         <width>90</width>
+         <height>22</height>
+        </size>
+       </property>
+       <property name="cursor">
+        <cursorShape>PointingHandCursor</cursorShape>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton 
+{
+  	background-color: rgb(194, 55, 0);
+  	color: white;
+	border-radius: 5px;
+    border-color: beige;
+}
+
+QPushButton:hover 
+{
+	background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 rgb(255, 125, 11), stop:1 rgb(255, 188, 17))
+}
+QPushButton:pressed {
+     background-color: rgb(98, 98, 98);
+     border-style: inset;
+ }</string>
+       </property>
+       <property name="text">
+        <string>Сохранить</string>
+       </property>
+       <property name="iconSize">
+        <size>
+         <width>30</width>
+         <height>30</height>
+        </size>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

@@ -1,0 +1,27 @@
+<RCC>
+    <qresource prefix="/">
+        <file>icons/Adobe Animate.ico</file>
+        <file>icons/icons8-europa-48.png</file>
+        <file>icons/icons8-russia-48.png</file>
+        <file>icons/icons8-usa-48.png</file>
+        <file>icons/icons8-delete-96.png</file>
+        <file>icons/icons8-load-96.png</file>
+        <file>icons/icons8-man-96.png</file>
+        <file>icons/icons8-save-96.png</file>
+        <file>icons/icons8-woman-96.png</file>
+        <file>icons/icons8-reverce-96.png</file>
+        <file>icons/icons8-48.png</file>
+        <file>icons/icons8-144.png</file>
+        <file>icons/icons8-240.png</file>
+        <file>icons2/icons8--50.png</file>
+        <file>icons2/icons8-add50.png</file>
+        <file>icons2/icons8-loginI50.png</file>
+        <file>icons2/icons8-logout-50.png</file>
+        <file>icons2/icons8-man-100.png</file>
+        <file>icons2/icons8-menu-50.png</file>
+        <file>icons2/icons8-revirce-50.png</file>
+        <file>icons2/icons8-woman100.png</file>
+        <file>icons2/icons8delete50.png</file>
+        <file>icons2/icons8save50.png</file>
+    </qresource>
+</RCC>

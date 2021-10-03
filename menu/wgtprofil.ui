@@ -1,0 +1,588 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>WgtProfil</class>
+ <widget class="QWidget" name="WgtProfil">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>551</width>
+    <height>399</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout_3">
+   <item>
+    <layout class="QVBoxLayout" name="verticalLayout_2">
+     <item>
+      <layout class="QHBoxLayout" name="horizontalLayout_4">
+       <item>
+        <widget class="QPushButton" name="pbtnBackToMenu">
+         <property name="cursor">
+          <cursorShape>PointingHandCursor</cursorShape>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QPushButton:enabled {
+  	background-color: rgb(194, 55, 0);
+  	color: white;
+	border-radius: 5px;
+    border-color: beige;
+}
+
+QPushButton {
+  	background-color: rgb(98, 98, 98);
+  	color: white;
+	border-radius: 5px;
+    border-color: beige;
+	min-width: 80px;
+	min-height: 22px;
+}
+
+QPushButton:hover {
+	background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 rgb(255, 125, 11), stop:1 rgb(255, 188, 17))
+}
+
+QPushButton:pressed {
+     background-color: rgb(98, 98, 98);
+     border-style: inset;
+ }</string>
+         </property>
+         <property name="text">
+          <string>Назад</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <spacer name="horizontalSpacer_3">
+         <property name="orientation">
+          <enum>Qt::Horizontal</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>40</width>
+           <height>20</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+       <item>
+        <layout class="QVBoxLayout" name="pvbxLayoutRu">
+         <property name="spacing">
+          <number>0</number>
+         </property>
+         <item alignment="Qt::AlignHCenter">
+          <widget class="QLabel" name="plblFlagRu">
+           <property name="maximumSize">
+            <size>
+             <width>30</width>
+             <height>30</height>
+            </size>
+           </property>
+           <property name="frameShape">
+            <enum>QFrame::NoFrame</enum>
+           </property>
+           <property name="frameShadow">
+            <enum>QFrame::Plain</enum>
+           </property>
+           <property name="text">
+            <string/>
+           </property>
+           <property name="pixmap">
+            <pixmap resource="../resurce.qrc">:/icons/icons8-russia-48.png</pixmap>
+           </property>
+           <property name="scaledContents">
+            <bool>true</bool>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignCenter</set>
+           </property>
+          </widget>
+         </item>
+         <item alignment="Qt::AlignHCenter">
+          <widget class="QLabel" name="plblMoneyRub">
+           <property name="font">
+            <font>
+             <pointsize>10</pointsize>
+            </font>
+           </property>
+           <property name="text">
+            <string>0</string>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignCenter</set>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </item>
+       <item>
+        <layout class="QVBoxLayout" name="pvbxLayoutUs">
+         <property name="spacing">
+          <number>0</number>
+         </property>
+         <item alignment="Qt::AlignHCenter">
+          <widget class="QLabel" name="plblFlagUs">
+           <property name="maximumSize">
+            <size>
+             <width>30</width>
+             <height>30</height>
+            </size>
+           </property>
+           <property name="frameShape">
+            <enum>QFrame::NoFrame</enum>
+           </property>
+           <property name="text">
+            <string/>
+           </property>
+           <property name="pixmap">
+            <pixmap resource="../resurce.qrc">:/icons/icons8-usa-48.png</pixmap>
+           </property>
+           <property name="scaledContents">
+            <bool>true</bool>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignCenter</set>
+           </property>
+          </widget>
+         </item>
+         <item alignment="Qt::AlignHCenter">
+          <widget class="QLabel" name="plblMoneyDol">
+           <property name="font">
+            <font>
+             <pointsize>10</pointsize>
+            </font>
+           </property>
+           <property name="text">
+            <string>0</string>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignCenter</set>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </item>
+       <item>
+        <layout class="QVBoxLayout" name="pvbxLayoutEur">
+         <property name="spacing">
+          <number>0</number>
+         </property>
+         <item alignment="Qt::AlignHCenter">
+          <widget class="QLabel" name="plblFlagEu">
+           <property name="maximumSize">
+            <size>
+             <width>30</width>
+             <height>30</height>
+            </size>
+           </property>
+           <property name="text">
+            <string/>
+           </property>
+           <property name="pixmap">
+            <pixmap resource="../resurce.qrc">:/icons/icons8-europa-48.png</pixmap>
+           </property>
+           <property name="scaledContents">
+            <bool>true</bool>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignCenter</set>
+           </property>
+          </widget>
+         </item>
+         <item alignment="Qt::AlignHCenter">
+          <widget class="QLabel" name="plblMoneyEur">
+           <property name="font">
+            <font>
+             <pointsize>10</pointsize>
+            </font>
+           </property>
+           <property name="text">
+            <string>0</string>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignCenter</set>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </item>
+       <item>
+        <spacer name="horizontalSpacer_4">
+         <property name="orientation">
+          <enum>Qt::Horizontal</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>40</width>
+           <height>20</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+       <item>
+        <widget class="QPushButton" name="pbtTopUpBalance">
+         <property name="minimumSize">
+          <size>
+           <width>120</width>
+           <height>22</height>
+          </size>
+         </property>
+         <property name="cursor">
+          <cursorShape>PointingHandCursor</cursorShape>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QPushButton:enabled {
+  	background-color: rgb(194, 55, 0);
+  	color: white;
+	border-radius: 5px;
+    border-color: beige;
+}
+
+QPushButton {
+  	background-color: rgb(98, 98, 98);
+  	color: white;
+	border-radius: 5px;
+    border-color: beige;
+}
+
+QPushButton:hover {
+	background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 rgb(255, 125, 11), stop:1 rgb(255, 188, 17))
+}
+
+QPushButton:pressed {
+     background-color: rgb(98, 98, 98);
+     border-style: inset;
+ }</string>
+         </property>
+         <property name="text">
+          <string>Пополнить баланс</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </item>
+     <item>
+      <widget class="Line" name="line">
+       <property name="styleSheet">
+        <string notr="true">background-color: rgb(125, 125, 125)</string>
+       </property>
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+   <item>
+    <spacer name="verticalSpacer">
+     <property name="orientation">
+      <enum>Qt::Vertical</enum>
+     </property>
+     <property name="sizeHint" stdset="0">
+      <size>
+       <width>20</width>
+       <height>40</height>
+      </size>
+     </property>
+    </spacer>
+   </item>
+   <item>
+    <layout class="QVBoxLayout" name="verticalLayout">
+     <item>
+      <layout class="QHBoxLayout" name="horizontalLayout">
+       <item>
+        <layout class="QFormLayout" name="formLayout">
+         <property name="labelAlignment">
+          <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+         </property>
+         <property name="horizontalSpacing">
+          <number>10</number>
+         </property>
+         <property name="verticalSpacing">
+          <number>27</number>
+         </property>
+         <item row="0" column="0">
+          <widget class="QLabel" name="plblUserName">
+           <property name="font">
+            <font>
+             <family>Malgun Gothic</family>
+             <pointsize>12</pointsize>
+            </font>
+           </property>
+           <property name="text">
+            <string>Имя ползователя:</string>
+           </property>
+          </widget>
+         </item>
+         <item row="0" column="1">
+          <widget class="QLabel" name="plblShowUserName">
+           <property name="font">
+            <font>
+             <family>Malgun Gothic</family>
+             <pointsize>12</pointsize>
+            </font>
+           </property>
+           <property name="text">
+            <string>TextLabel</string>
+           </property>
+          </widget>
+         </item>
+         <item row="1" column="0">
+          <widget class="QLabel" name="plblFullName">
+           <property name="font">
+            <font>
+             <family>Malgun Gothic</family>
+             <pointsize>12</pointsize>
+            </font>
+           </property>
+           <property name="text">
+            <string>ФИО:</string>
+           </property>
+          </widget>
+         </item>
+         <item row="1" column="1">
+          <widget class="QLabel" name="plblShowFullName">
+           <property name="font">
+            <font>
+             <family>Malgun Gothic</family>
+             <pointsize>12</pointsize>
+            </font>
+           </property>
+           <property name="text">
+            <string>TextLabel</string>
+           </property>
+          </widget>
+         </item>
+         <item row="2" column="0">
+          <widget class="QLabel" name="plblEmail">
+           <property name="font">
+            <font>
+             <family>Malgun Gothic</family>
+             <pointsize>12</pointsize>
+            </font>
+           </property>
+           <property name="text">
+            <string>E-mail:</string>
+           </property>
+          </widget>
+         </item>
+         <item row="2" column="1">
+          <widget class="QLabel" name="plblShowEmail">
+           <property name="font">
+            <font>
+             <family>Malgun Gothic</family>
+             <pointsize>12</pointsize>
+            </font>
+           </property>
+           <property name="text">
+            <string>TextLabel</string>
+           </property>
+          </widget>
+         </item>
+         <item row="3" column="0">
+          <widget class="QLabel" name="plblSex">
+           <property name="font">
+            <font>
+             <family>Malgun Gothic</family>
+             <pointsize>12</pointsize>
+            </font>
+           </property>
+           <property name="text">
+            <string>Пол:</string>
+           </property>
+          </widget>
+         </item>
+         <item row="3" column="1">
+          <widget class="QLabel" name="plblShowSex">
+           <property name="font">
+            <font>
+             <family>Malgun Gothic</family>
+             <pointsize>12</pointsize>
+            </font>
+           </property>
+           <property name="text">
+            <string>TextLabel</string>
+           </property>
+          </widget>
+         </item>
+         <item row="4" column="0">
+          <widget class="QLabel" name="plblDayOfBirth">
+           <property name="font">
+            <font>
+             <family>Malgun Gothic</family>
+             <pointsize>12</pointsize>
+            </font>
+           </property>
+           <property name="text">
+            <string>Дата рождения:</string>
+           </property>
+          </widget>
+         </item>
+         <item row="4" column="1">
+          <widget class="QLabel" name="plblShowDayOfBirth">
+           <property name="font">
+            <font>
+             <family>Malgun Gothic</family>
+             <pointsize>12</pointsize>
+            </font>
+           </property>
+           <property name="text">
+            <string>TextLabel</string>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </item>
+       <item alignment="Qt::AlignHCenter">
+        <widget class="QLabel" name="plblShowPhoto">
+         <property name="maximumSize">
+          <size>
+           <width>200</width>
+           <height>200</height>
+          </size>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </item>
+     <item>
+      <layout class="QHBoxLayout" name="horizontalLayout_2">
+       <item>
+        <spacer name="horizontalSpacer">
+         <property name="orientation">
+          <enum>Qt::Horizontal</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>40</width>
+           <height>20</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+       <item>
+        <widget class="QPushButton" name="pbtnChangeUser">
+         <property name="minimumSize">
+          <size>
+           <width>80</width>
+           <height>22</height>
+          </size>
+         </property>
+         <property name="cursor">
+          <cursorShape>PointingHandCursor</cursorShape>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QPushButton:enabled {
+  	background-color: rgb(194, 55, 0);
+  	color: white;
+	border-radius: 5px;
+    border-color: beige;
+}
+
+QPushButton {
+  	background-color: rgb(98, 98, 98);
+  	color: white;
+	border-radius: 5px;
+    border-color: beige;
+}
+
+QPushButton:hover {
+	background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 rgb(255, 125, 11), stop:1 rgb(255, 188, 17))
+}
+
+QPushButton:pressed {
+     background-color: rgb(98, 98, 98);
+     border-style: inset;
+ }</string>
+         </property>
+         <property name="text">
+          <string>Изменить</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </item>
+    </layout>
+   </item>
+   <item>
+    <spacer name="verticalSpacer_2">
+     <property name="orientation">
+      <enum>Qt::Vertical</enum>
+     </property>
+     <property name="sizeHint" stdset="0">
+      <size>
+       <width>20</width>
+       <height>40</height>
+      </size>
+     </property>
+    </spacer>
+   </item>
+   <item>
+    <layout class="QHBoxLayout" name="horizontalLayout_3">
+     <item>
+      <widget class="QPushButton" name="pbtnChangePassword">
+       <property name="minimumSize">
+        <size>
+         <width>110</width>
+         <height>22</height>
+        </size>
+       </property>
+       <property name="cursor">
+        <cursorShape>PointingHandCursor</cursorShape>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton:enabled {
+  	background-color: rgb(194, 55, 0);
+  	color: white;
+	border-radius: 5px;
+    border-color: beige;
+}
+
+QPushButton {
+  	background-color: rgb(98, 98, 98);
+  	color: white;
+	border-radius: 5px;
+    border-color: beige;
+}
+
+QPushButton:hover {
+	background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 rgb(255, 125, 11), stop:1 rgb(255, 188, 17))
+}
+
+QPushButton:pressed {
+     background-color: rgb(98, 98, 98);
+     border-style: inset;
+ }</string>
+       </property>
+       <property name="text">
+        <string>Изменить пароль</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <spacer name="horizontalSpacer_2">
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+       <property name="sizeHint" stdset="0">
+        <size>
+         <width>40</width>
+         <height>20</height>
+        </size>
+       </property>
+      </spacer>
+     </item>
+    </layout>
+   </item>
+  </layout>
+ </widget>
+ <resources>
+  <include location="../resurce.qrc"/>
+ </resources>
+ <connections/>
+</ui>

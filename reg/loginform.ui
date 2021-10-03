@@ -1,0 +1,396 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>LoginForm</class>
+ <widget class="QWidget" name="LoginForm">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>521</width>
+    <height>301</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout_2">
+   <item>
+    <spacer name="verticalSpacer_2">
+     <property name="orientation">
+      <enum>Qt::Vertical</enum>
+     </property>
+     <property name="sizeHint" stdset="0">
+      <size>
+       <width>20</width>
+       <height>40</height>
+      </size>
+     </property>
+    </spacer>
+   </item>
+   <item>
+    <layout class="QHBoxLayout" name="horizontalLayout_2">
+     <item>
+      <spacer name="horizontalSpacer_3">
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+       <property name="sizeHint" stdset="0">
+        <size>
+         <width>40</width>
+         <height>20</height>
+        </size>
+       </property>
+      </spacer>
+     </item>
+     <item>
+      <layout class="QVBoxLayout" name="verticalLayout">
+       <item>
+        <widget class="QLabel" name="plblLogin">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="font">
+          <font>
+           <pointsize>10</pointsize>
+          </font>
+         </property>
+         <property name="text">
+          <string>Логин:</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLineEdit" name="lineEditLogin">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="minimumSize">
+          <size>
+           <width>0</width>
+           <height>24</height>
+          </size>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QLineEdit
+{ 
+border: 2px solid gray;
+     border-radius: 4px;
+     padding: 0 8px;
+background-color: rgb(225, 225, 225);
+color: rgb(48, 48, 48);
+     selection-background-color: rgb(0, 170, 255);
+}</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLabel" name="plblPassword">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="font">
+          <font>
+           <pointsize>10</pointsize>
+          </font>
+         </property>
+         <property name="text">
+          <string>Пароль:</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLineEdit" name="lineEditPassword">
+         <property name="minimumSize">
+          <size>
+           <width>0</width>
+           <height>24</height>
+          </size>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QLineEdit {
+border: 2px solid gray;
+     border-radius: 4px;
+     padding: 0 8px;
+background-color: rgb(225, 225, 225);
+color: rgb(48, 48, 48);
+     selection-background-color: rgb(0, 170, 255);
+}</string>
+         </property>
+         <property name="echoMode">
+          <enum>QLineEdit::Password</enum>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <layout class="QHBoxLayout" name="horizontalLayout">
+         <item>
+          <widget class="QCheckBox" name="checkBoxViewPassword">
+           <property name="cursor">
+            <cursorShape>PointingHandCursor</cursorShape>
+           </property>
+           <property name="autoFillBackground">
+            <bool>false</bool>
+           </property>
+           <property name="styleSheet">
+            <string notr="true"> QCheckBox {
+     spacing: 2px;
+ }
+
+/*QCheckBox::indicator:unchecked {
+     image: url(:/icons2/icons8delete50.png);
+ }
+
+ QCheckBox::indicator:unchecked:hover {
+     image: url(:/icons2/icons8-man-100.png);
+ }
+
+  QCheckBox::indicator:unchecked:pressed {
+     image: url(:/icons2/icons8delete50.png);
+ }
+
+ QCheckBox::indicator:checked {
+     image: url(:/icons2/icons8-logout-50.png);
+ }
+
+ QCheckBox::indicator:checked:hover {
+     image: url(:/icons2/icons8-man-100.png);
+ }
+
+ QCheckBox::indicator:checked:pressed {
+     image: url(:/icons2/icons8delete50.png);
+ }
+
+ QCheckBox::indicator:indeterminate:hover {
+     image: url(:/icons2/icons8-man-100.png);
+ }
+
+ QCheckBox::indicator:indeterminate:pressed {
+     image: url(:/icons2/icons8delete50.png);
+ }*/</string>
+           </property>
+           <property name="text">
+            <string> Показать пароль</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <spacer name="horizontalSpacer_2">
+           <property name="orientation">
+            <enum>Qt::Horizontal</enum>
+           </property>
+           <property name="sizeHint" stdset="0">
+            <size>
+             <width>40</width>
+             <height>20</height>
+            </size>
+           </property>
+          </spacer>
+         </item>
+         <item>
+          <widget class="QPushButton" name="pbtnNewPassword">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="cursor">
+            <cursorShape>PointingHandCursor</cursorShape>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QPushButton 
+{
+  	border-radius: 5px;
+}
+
+QPushButton:hover 
+{
+	color: rgb(0, 149, 223);
+}
+QPushButton:pressed 
+{
+	color: rgb(202, 202, 202);
+}</string>
+           </property>
+           <property name="text">
+            <string>Забыли пароль?</string>
+           </property>
+           <property name="checkable">
+            <bool>false</bool>
+           </property>
+           <property name="checked">
+            <bool>false</bool>
+           </property>
+           <property name="autoRepeat">
+            <bool>false</bool>
+           </property>
+           <property name="autoExclusive">
+            <bool>false</bool>
+           </property>
+           <property name="autoDefault">
+            <bool>false</bool>
+           </property>
+           <property name="default">
+            <bool>false</bool>
+           </property>
+           <property name="flat">
+            <bool>false</bool>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </item>
+      </layout>
+     </item>
+     <item>
+      <spacer name="horizontalSpacer_4">
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+       <property name="sizeHint" stdset="0">
+        <size>
+         <width>40</width>
+         <height>20</height>
+        </size>
+       </property>
+      </spacer>
+     </item>
+    </layout>
+   </item>
+   <item>
+    <spacer name="verticalSpacer">
+     <property name="orientation">
+      <enum>Qt::Vertical</enum>
+     </property>
+     <property name="sizeHint" stdset="0">
+      <size>
+       <width>20</width>
+       <height>40</height>
+      </size>
+     </property>
+    </spacer>
+   </item>
+   <item>
+    <layout class="QHBoxLayout" name="phbxLayoutButtons">
+     <property name="spacing">
+      <number>10</number>
+     </property>
+     <item>
+      <spacer name="horizontalSpacer">
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+       <property name="sizeHint" stdset="0">
+        <size>
+         <width>40</width>
+         <height>20</height>
+        </size>
+       </property>
+      </spacer>
+     </item>
+     <item>
+      <widget class="QPushButton" name="pbtnLogIntoAccount">
+       <property name="enabled">
+        <bool>false</bool>
+       </property>
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="MinimumExpanding" vsizetype="Preferred">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>100</width>
+         <height>16777215</height>
+        </size>
+       </property>
+       <property name="cursor">
+        <cursorShape>PointingHandCursor</cursorShape>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton:enabled {
+  	background-color: rgb(194, 55, 0);
+  	color: white; 	
+	border-radius: 5px;
+    border-color: beige;
+}
+
+QPushButton {
+  	background-color: rgb(98, 98, 98);
+	color: white; 
+	border-radius: 5px;
+    border-color: beige;
+}
+
+QPushButton:hover {
+	background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 rgb(255, 125, 11), stop:1 rgb(255, 188, 17))
+}
+
+QPushButton:pressed {
+     background-color: rgb(98, 98, 98);
+     border-style: inset;
+ }</string>
+       </property>
+       <property name="text">
+        <string>Войти</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="pbtnRegistration">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="MinimumExpanding" vsizetype="Preferred">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>100</width>
+         <height>16777215</height>
+        </size>
+       </property>
+       <property name="cursor">
+        <cursorShape>PointingHandCursor</cursorShape>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton 
+{
+  	background-color: rgb(194, 55, 0);
+  	color: white; 
+	
+	border-radius: 5px;
+    border-color: beige;
+}
+
+QPushButton:hover 
+{
+	background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 rgb(255, 125, 11), stop:1 rgb(255, 188, 17))
+}
+QPushButton:pressed {
+     background-color: rgb(98, 98, 98);
+     border-style: inset;
+ }</string>
+       </property>
+       <property name="text">
+        <string>Регистрация</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
